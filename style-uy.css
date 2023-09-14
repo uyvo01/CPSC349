@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+  
+.header {
+    background-color: #33b5e5;
+    color: #ffffff;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    padding-bottom: 0%;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+#header {
+    border:none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+div.menu{
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    float:left;
+    border-right:  1px solid #bbb;
+    font-weight: bold;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: green;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-content: center;
+    position: sticky;
+}
+  
+.menu li {
+    padding: 10px;
+    margin-bottom: 0;
+    width:25%;
+    background-color: #3365e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+    top: 0px;
+    position: sticky;
+
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+    transition: background 0s;
+    transition-delay: 1s;
+    animation-name: changecolor;
+    animation-duration: 2s;
+}
+
+@keyframes changecolor {
+    from {
+      background-color: #3365e5 
+    }
+    to { background-color: orange;
+  
+    }
+}
+
+body {
+    text-align: center;
+}
+.content {
+    background-color: #e2f8d3;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color:black;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-right: 1px;
+    column-gap: 10px;
+}
+.item {
+    order: 2;
+}
+
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets*/
+    .col-s-1 {width: 100%;}
+    .col-s-2 {width: 25%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 25%;}
+    .col-s-5 {width: 25%;}
+    
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop:*/
+    .col-1 {width: 100%;}
+    .col-2 {width: 25%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 25%;}
+    .col-5 {width: 25%;}
+  }
+
+.title1 {
+    font-size: 20pt;
+    font-weight:bold;
+    color: white;
+    padding: 10px;
+    margin-top: 0px;
+}
+.title2 {
+    font-size: 15pt;
+    font-weight:bold;
+    color: white;
+    padding: 10px;
+    margin-top: 0px;
+}
+h1 {
+    color: navy;
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 30px;
+    font-weight: bold;   
+}
+
+h2 {
+    color: orange;
+}
+
+h3 {
+    color: black;
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 14px;
+    font-display:inherit;
+    font-weight: normal;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:active {
+    color:red;
+    animation-name: changecolor;
+    animation-duration: 4s;
+}
+
+label{
+    padding: 10px;
+}
+input[type="text"] {
+    border:none;
+    border-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+    width:100%;
+}
+
+table td {
+    padding: 10px;
+}
+
+table thead td {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #54585d;
+}
+
+table tbody td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+}
+
+table tbody tr {
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #FEF9E7;
+}
+
+td {
+    text-align: left;
+}
+
+.button {
+  background-color: #D35400;
+  border: none;
+  color: white;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  cursor: pointer;
+}
+

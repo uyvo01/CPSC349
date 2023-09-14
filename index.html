@@ -2,61 +2,99 @@
 <html>
 <head>
   <title>Home Page</title>
+  <link rel="stylesheet" href="style-uy.css">
 </head>
 <body>
-  <center>
-<h1>CLASS CPSC349-03 - WEB FRONT-END Engineering</h1>
-<h2>Instructor  : Ethan Uong </h2>
-<h2>Student     : Uy Vo - 885798181 </h2>
-<h2>Spring 2023</h2>
-<hr>
-
-<table width="400" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td bgcolor="#255851" align="center"><b><a href="index.html"><font color = "#FFFFFF" size="3px">Home</font></a></b></td>      
-    <td bgcolor="#255851" align="center"><b><a href="contact.html"><font color = "#FFFFFF" size="3px">Contact</font></a></b></td>
-    <td bgcolor="#255851" align="center"><b><a href="education.html"><font color = "#FFFFFF" size="3px">Education Plan</font></a></b></td>
-    <td bgcolor="#255851" align="center"><b><a href="hobby.html"><font color = "#FFFFFF" size="3px">Hobby</font></a></b></td>
-</tr>
-</table>
-<br>
-<hr>
-<h1>Home Page</h1>
-<h2>Exercise 1: to be familiar with HTML elements by creating a personal website</h2>
-<h1>Test font size</h1>
-<h2>This is h2</h2>
-<h3>This is h3</h3>
-<h4>This is h4</h4>
-<h5>This is h5</h5>
-<h6>This is h6</h6>
-<br>
-<hr>
-<p>Show student information</p>
-<form action="index.html" method="get">
-<label for="fname">First name:</label>
-<input type="text" id="fname" name="fname" value="Uy" readonly><br>
-<label for="lname">Last name:</label>
-<input type="text" id="lname" name="lname" value ="Vo" readonly><br>
-
-<label for="school">School</label>
-<textarea id="school" name="school" rows="4" cols="50" readonly>
-  Contacts and Addresses   |   General: 657-278-2011   |   Emergency Closure Info: 877-278-1712
-  Tell us about a web accessibility problem.   |   © California State University, Fullerton. All Rights Reserved.
-</textarea>
-<p></p>
-<label for="car">Using car:</label>
-<select id="car">
-  <optgroup label ="Japanese Cars">
-    <option value="lexus">Lexus</option>
-    <option value="toyota">Toyota</option>  
-  </optgroup>
-  <optgroup label ="US Cars">
-    <option value="ford">Ford</option>
-    <option value="gm">GM</option>
-  </optgroup>
-</select>
-<p><input type="submit" value="Submit"></p>
-</form>
-</center>
-</body>
+    <div class="header">
+          <div class="title1">CLASS CPSC349-03 - WEB FRONT-END Engineering</div>
+          <div class="title2">Instructor  : Ethan Uong </div>
+          <div class="title2">Student     : Uy Vo - 885798181 </div>
+          <div class="title2">Spring 2023</div>
+    </div>
+    <div class="menu">
+      <div class="col-1 col-s-1 menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-1 col-s-1">
+      <div class="content">
+        <h1>HOME PAGE</h1>
+        <h2>Exercise 2: styling to personal website and make it responsive</h2>
+        <table>
+          <tr><td>First name</td><td>Uy</td></tr>
+          <tr><td>Last name</td><td>Vo</td></tr>
+          <tr><td>School</td><td>California State University of Fullerton</td></tr>
+        </table>
+        <br />
+        <label for="Major">Select major</label>
+        <select id="manjor">
+            <optgroup label ="Engineer & Computer Science">
+              <option value="engineer">Engineer</option>
+              <option value="c">Computer Science</option>  
+            </optgroup>
+            <optgroup label ="Business">
+              <option value="account">Accountant</option>
+              <option value="marketing">Marketing</option>
+            </optgroup>
+          </select>
+          <p><input type="button" value="Submit"></p>
+      </div>
+    </div>
+    <hr>
+    <h3>1. Every styling must be done one external stylesheets. No internal stylesheet and definitely no inline styling! </h3>
+    <h3>2. Your website should be responsive. This means if I resize your browser or change the
+      screen device, the pages and layout should behave such that contents are still shown
+      effectively maximum display size to ensure usability and satisfaction.
+    <h3>3. You must apply at least 40 unique CSS properties!</h3>
+    <h3>4. You will use an on-line CSS validator to verify that your webpages are correct. Screenshots
+      of the validator report for each external stylesheet are part of your submission. </h3>
+    <h3>Once your pages are finished, upload them to a web server so it's live on the internet! You
+      may choose any method you'd like but in class I had shown how to deploy in Netlify and
+      Github pages.</h3>
+    <h3>6. To complete the assignment, submit to Canvas your screenshots from the Validator, a link
+      to your Github repo, and the link to your website under the Comment box in the submission
+      or on a text file.</h3>
+    <h3>7. Note: For this assignment, do not include any scripting on your site and do not use any
+      CSS library</h3>
+    <h2>Repeat 1</h2>
+    <h3>1. Every styling must be done one external stylesheets. No internal stylesheet and definitely no inline styling! </h3>
+    <h3>2. Your website should be responsive. This means if I resize your browser or change the
+      screen device, the pages and layout should behave such that contents are still shown
+      effectively maximum display size to ensure usability and satisfaction.
+    <h3>3. You must apply at least 40 unique CSS properties!</h3>
+    <h3>4. You will use an on-line CSS validator to verify that your webpages are correct. Screenshots
+      of the validator report for each external stylesheet are part of your submission. </h3>
+    <h3>Once your pages are finished, upload them to a web server so it's live on the internet! You
+      may choose any method you'd like but in class I had shown how to deploy in Netlify and
+      Github pages.</h3>
+    <h3>6. To complete the assignment, submit to Canvas your screenshots from the Validator, a link
+      to your Github repo, and the link to your website under the Comment box in the submission
+      or on a text file.</h3>
+    <h3>7. Note: For this assignment, do not include any scripting on your site and do not use any
+      CSS library</h3>
+    <h2>Repeat 2</h2>
+    <h3>1. Every styling must be done one external stylesheets. No internal stylesheet and definitely no inline styling! </h3>
+    <h3>2. Your website should be responsive. This means if I resize your browser or change the
+      screen device, the pages and layout should behave such that contents are still shown
+      effectively maximum display size to ensure usability and satisfaction.
+    <h3>3. You must apply at least 40 unique CSS properties!</h3>
+    <h3>4. You will use an on-line CSS validator to verify that your webpages are correct. Screenshots
+      of the validator report for each external stylesheet are part of your submission. </h3>
+    <h3>Once your pages are finished, upload them to a web server so it's live on the internet! You
+      may choose any method you'd like but in class I had shown how to deploy in Netlify and
+      Github pages.</h3>
+    <h3>6. To complete the assignment, submit to Canvas your screenshots from the Validator, a link
+      to your Github repo, and the link to your website under the Comment box in the submission
+      or on a text file.</h3>
+    <h3>7. Note: For this assignment, do not include any scripting on your site and do not use any
+      CSS library</h3>
+    <div class="footer">
+      <h2>I have something new to learn everyday.</h2>
+    </div>
+    </body>
 </html>
