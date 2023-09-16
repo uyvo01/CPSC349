@@ -17,6 +17,8 @@ html {
     position:relative;
     top:0;
     left:0;
+    animation-name: flyheader;
+    animation-duration: 2s;
 }
 
 #header {
@@ -30,7 +32,6 @@ html {
 div.menu{
     content: "";
     clear: both;
-    display: table;
     text-align: center;
     width: 100%;
     position: sticky;
@@ -95,7 +96,16 @@ li a.active {
     animation-name: changecolor;
     animation-duration: 2s;
 }
+@keyframes flyheader {
+    from {
+        margin-left: 100%;
 
+    }
+    to {
+        margin-left: 0%;
+    }
+    
+}
 @keyframes changecolor {
     from {
       background-color: #3365e5 
